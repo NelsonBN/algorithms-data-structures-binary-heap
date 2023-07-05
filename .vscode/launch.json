@@ -1,0 +1,38 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "MaxHeap",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/src/Demo.MaxHeap/bin/Debug/net8.0/Demo.MaxHeap.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/src/Demo.MaxHeap",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    },
+    {
+      "name": "MinHeap",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/src/Demo.MinHeap/bin/Debug/net8.0/Demo.MinHeap.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/src/Demo.MinHeap",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    },
+    {
+      "name": "QuaternaryMinHeap",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/src/Demo.QuaternaryMinHeap/bin/Debug/net8.0/Demo.QuaternaryMinHeap.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/src/Demo.QuaternaryMinHeap",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    }
+  ]
+}
