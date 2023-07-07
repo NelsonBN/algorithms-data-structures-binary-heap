@@ -24,13 +24,13 @@
       "stopAtEntry": false
     },
     {
-      "name": "QuaternaryMinHeap",
+      "name": "KAryHeap",
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build",
-      "program": "${workspaceFolder}/src/Demo.QuaternaryMinHeap/bin/Debug/net8.0/Demo.QuaternaryMinHeap.dll",
+      "program": "${workspaceFolder}/src/Demo.KAryHeap/bin/Debug/net8.0/Demo.KAryHeap.dll",
       "args": [],
-      "cwd": "${workspaceFolder}/src/Demo.QuaternaryMinHeap",
+      "cwd": "${workspaceFolder}/src/Demo.KAryHeap",
       "console": "internalConsole",
       "stopAtEntry": false
     }
