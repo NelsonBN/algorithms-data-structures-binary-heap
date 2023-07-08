@@ -1,32 +1,21 @@
 ﻿using static System.Console;
 
-var arity = 4;
-var size = Random.Shared.Next(100);
+var numberOfChildren = Random.Shared.Next(2, 7);
+var totalItems = Random.Shared.Next(2, 100);
 
-var list = new int[size];
-var heap = new KAryHeap(arity, size);
+WriteLine($"K-ary Heap ({numberOfChildren}) - {totalItems} items");
 
-for(var i = 0; i < size; i++)
+var heap = new KAryHeap(
+    numberOfChildren,
+    totalItems);
+
+for(var i = 0; i < totalItems; i++)
 {
-    var value = Random.Shared.Next(100);
-
-    list[i] = value;
-    heap.Push(value);
+    heap.Push(Random.Shared.Next(100));
 }
-
-Array.Sort(list);
-
-var count = 0;
 while(heap.Count > 0)
 {
-    var value = heap.Pop();
-
-    if(value != list[count++])
-    {
-        throw new Exception("Invalid value");
-    }
-
-    WriteLine(value);
+    WriteLine(heap.Pop());
 }
 
 
@@ -89,9 +78,6 @@ public class KAryHeap
         Count++;
     }
 
-    public int Peek()
-        => Count > 0 ? _heap[0] : throw new InvalidOperationException("Heap is empty");
-
     public int Pop()
     {
         if(Count <= 0)
@@ -107,6 +93,7 @@ public class KAryHeap
         var smallestChild = _child(current, 1);
         while(smallestChild < Count)
         {
+            // Find smallest child, will iterate over the children
             for(var i = 2; i <= _arity; i++)
             {
                 var currentChild = _child(current, i);
@@ -116,11 +103,14 @@ public class KAryHeap
                     smallestChild;
             }
 
+            // When does the current node is smaller tham the smallest child, that means we have a valid heap
             if(_isSmaller(current, smallestChild))
             {
                 break;
             }
 
+            // If the code hits here, that means we found a smaller child smaller than the current node, so we swap them and prepare for the next iteration (level down)
+            //     The path we should take is the node of the smallest child was swapped with the current node
             _swap(current, smallestChild);
             current = smallestChild;
             smallestChild = _child(current, 1);
