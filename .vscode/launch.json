@@ -33,6 +33,28 @@
       "cwd": "${workspaceFolder}/src/Demo.KAryHeap",
       "console": "internalConsole",
       "stopAtEntry": false
+    },
+    {
+      "name": "HeapSort",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/src/Demo.HeapSort/bin/Debug/net8.0/Demo.HeapSort.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/src/Demo.HeapSort",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    },
+    {
+      "name": "HeapSortRecursive",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/src/Demo.HeapSortRecursive/bin/Debug/net8.0/Demo.HeapSortRecursive.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/src/Demo.HeapSortRecursive",
+      "console": "internalConsole",
+      "stopAtEntry": false
     }
   ]
 }
