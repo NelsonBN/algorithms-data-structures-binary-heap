@@ -55,6 +55,17 @@
       "cwd": "${workspaceFolder}/src/Demo.HeapSortRecursive",
       "console": "internalConsole",
       "stopAtEntry": false
+    },
+    {
+      "name": "HeapAdvanced",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/src/Demo.HeapAdvanced/bin/Debug/net8.0/Demo.HeapAdvanced.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/src/Demo.HeapAdvanced",
+      "console": "internalConsole",
+      "stopAtEntry": false
     }
   ]
 }

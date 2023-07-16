@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.HeapSort", "src\Demo.H
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.HeapSortRecursive", "src\Demo.HeapSortRecursive\Demo.HeapSortRecursive.csproj", "{43326682-1554-4830-8530-2105004A9CD1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.HeapAdvanced", "src\Demo.HeapAdvanced\Demo.HeapAdvanced.csproj", "{C615F860-F47F-4059-8280-6F81ED027157}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{43326682-1554-4830-8530-2105004A9CD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43326682-1554-4830-8530-2105004A9CD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43326682-1554-4830-8530-2105004A9CD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C615F860-F47F-4059-8280-6F81ED027157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C615F860-F47F-4059-8280-6F81ED027157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C615F860-F47F-4059-8280-6F81ED027157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C615F860-F47F-4059-8280-6F81ED027157}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
