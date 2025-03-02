@@ -15,4 +15,4 @@ Sorted -> 99, 87, 75, 54, 44, 44, 42, 14, 12, 11
 
 
 ## References
-- [Other algoritmos & Data Structures](https://github.com/NelsonBN/algorithms-data-structures)
+- [Other Algorithms & Data Structures](https://github.com/NelsonBN/algorithms-data-structures)
